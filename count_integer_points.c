@@ -35,6 +35,6 @@ int main(int argc, char **argv) {
 	isl_printer_free(p);
 	isl_pw_qpolynomial_free(nElemsPoly);
 	isl_set_free(s);
-	isl_ctx_free(ctx);
+//	isl_ctx_free(ctx);
 	return 0;
 }
