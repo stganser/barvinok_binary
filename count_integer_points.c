@@ -1,10 +1,11 @@
-#include "barvinok/barvinok.h"
-#include "isl/ctx.h"
-#include "isl/set.h"
-#include "isl/polynomial.h"
-#include "isl/printer.h"
+#include <barvinok/isl.h>
+#include <isl/ctx.h>
+#include <isl/map_type.h>
+#include <isl/polynomial.h>
+#include <isl/polynomial_type.h>
+#include <isl/printer.h>
+#include <isl/set.h>
 #include <stdio.h>
-#include <stdlib.h>
 
 /*
  * count_integer_points.c
