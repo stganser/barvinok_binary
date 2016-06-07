@@ -16,7 +16,19 @@
 
 
 int main(int argc, char **argv) {
-	int maxInputLen = 4096;
+
+	if (argc < 2) {
+		fprintf(stderr, "Expected one command line argument: number of characters to read from stdin.\n");
+		return 1;
+	}
+
+	int maxInputLen;
+
+	if (sscanf(argv[1], "%d", &maxInputLen) < 1) {
+		fprintf(stderr, "Failed to parse the number of characters to read: %s\n", argv[1]);
+		return 1;
+	}
+
 	char setStr[maxInputLen];
 	char *success = fgets(setStr, maxInputLen, stdin);
 	if (!success) {
