@@ -1,1 +1,0 @@
-clang -std=c99 -I ../barvinok/barvinok/install/include/ -L ~/workspace/barvinok/barvinok/install/lib/ -lbarvinok -lisl count_integer_points.c
