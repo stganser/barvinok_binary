@@ -4,7 +4,7 @@
 
 A binary that can be called by Polyite to use Barvinok's counting algorithm.
 
-This program is part of project Polyite, which is released under the MIT license. It depends on libbarvinok, version 0.39, which is GPL licensed.
+This program is part of project Polyite, which is released under the GNU Lesser General Public License, version 3 or later. It depends on libbarvinok, version 0.39, which is GPL licensed.
 
 ## Installation
 
